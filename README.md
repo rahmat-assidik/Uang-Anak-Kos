@@ -1,71 +1,90 @@
-# 🏠 Uang Anak Kos
+# Sistem Informasi Manajemen Keuangan Personal: Uang Anak Kos
 
-[![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat&logo=laravel&logoColor=white)](https://laravel.com)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Alpine.js](https://img.shields.io/badge/Alpine.js-8BC0D0?style=flat&logo=alpine.js&logoColor=white)](https://alpinejs.dev)
-[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)](https://php.net)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://mysql.com)
+![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-**Uang Anak Kos** adalah aplikasi manajemen keuangan sederhana namun powerful yang dirancang khusus untuk membantu anak kos (mahasiswa/pekerja) memantau arus kas harian mereka. Dengan desain **Flat UI** yang modern dan minimalis, aplikasi ini memberikan pengalaman pengguna yang bersih dan fokus pada data.
+## 📋 Deskripsi Proyek
 
-## ✨ Fitur Utama
+**Uang Anak Kos** merupakan sebuah platform berbasis web yang dirancang secara komprehensif untuk memfasilitasi pengelolaan manajemen keuangan personal, khususnya bagi kalangan mahasiswa maupun pekerja yang tinggal di hunian sewa (kos). Sistem ini bertujuan untuk meningkatkan literasi keuangan pengguna melalui pemantauan arus kas yang disiplin dan terstruktur.
 
--   📊 **Dashboard Ringkasan**: Lihat saldo total, pemasukan, dan pengeluaran bulan ini secara sekilas.
--   📈 **Grafik Interaktif**: Visualisasi arus kas menggunakan Chart.js untuk membantu analisis keuangan.
--   💸 **Manajemen Transaksi**: Catat pemasukan dan pengeluaran dengan detail sumber dan kategori.
--   🏷️ **Kategori Kustom**: Kelola kategori pengeluaran Anda sendiri untuk pengelompokan yang lebih baik.
--   🎨 **Flat Design**: Antarmuka modern dengan estetika flat yang nyaman dipandang.
--   📱 **Responsive**: Dapat diakses dengan nyaman melalui perangkat mobile maupun desktop.
+Mengadopsi filosofi desain **Flat Administrative UI**, aplikasi ini menitikberatkan pada aspek fungsionalitas dan legibilitas data tanpa distraksi visual yang berlebihan. Penggunaan skema warna *gray-50* dan tipografi *Helvetica Neue* memberikan impresi profesional yang selaras dengan standar aplikasi manajemen finansial modern.
 
-## 🚀 Teknologi yang Digunakan
+## 🚀 Fitur Utama
 
--   **Backend**: Laravel 11
--   **Frontend**: Tailwind CSS & Alpine.js
--   **Database**: MySQL
--   **Charts**: Chart.js
--   **Icons**: Heroicons
+Sistem ini mencakup berbagai modul fungsional yang telah dioptimasi untuk kebutuhan pengguna:
 
-## 🛠️ Instalasi
+*   **Dashboard Analitik**: Menyediakan representasi data saldo aktual, akumulasi pemasukan, dan pengeluaran dalam periode berjalan secara *real-time*.
+*   **Visualisasi Arus Kas**: Integrasi dengan library *Chart.js* untuk menghasilkan grafik fluktuasi keuangan yang membantu dalam pengambilan keputusan finansial.
+*   **Manajemen Transaksi Terpadu**: Modul entri data untuk mencatat setiap transaksi masuk dan keluar dengan presisi tinggi, lengkap dengan klasifikasi kategori.
+*   **Sistem Kategori Dinamis**: Fleksibilitas bagi pengguna untuk mendefinisikan kategori transaksi sesuai dengan pola konsumsi personal.
+*   **Keamanan Data**: Protokol autentikasi dan otorisasi yang ketat menggunakan *Laravel Breeze* untuk menjamin privasi data finansial pengguna.
+*   **Arsitektur Responsif**: Antarmuka yang adaptif di berbagai resolusi layar, memastikan pengalaman pengguna yang konsisten baik di perangkat seluler maupun desktop.
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lokal:
+## 🛠️ Spesifikasi Teknologi
 
-1. **Clone repositori**
-   ```bash
-   git clone https://github.com/username/Uang-Anak-Kos.git
-   cd Uang-Anak-Kos
-   ```
+Pengembangan sistem ini memanfaatkan *tech-stack* modern untuk menjamin performa dan skalabilitas:
 
-2. **Instal dependensi PHP**
-   ```bash
-   composer install
-   ```
+| Komponen | Teknologi | Deskripsi |
+| :--- | :--- | :--- |
+| **Bahasa Pemrograman** | PHP 8.3+ | Keamanan dan performa tinggi pada sisi server. |
+| **Framework Backend** | Laravel 13 | Arsitektur MVC yang robust dan aman. |
+| **Framework CSS** | Tailwind CSS | Pengembangan antarmuka yang efisien dan modular. |
+| **Logika Frontend** | Alpine.js | Reaktivitas ringan untuk komponen interaktif. |
+| **Sistem Database** | MySQL | Penyimpanan data relasional yang stabil. |
+| **Build Tool** | Vite | Optimalisasi aset frontend untuk *loading speed* maksimal. |
 
-3. **Instal dependensi Frontend**
-   ```bash
-   npm install && npm run dev
-   ```
+## ⚙️ Panduan Instalasi
 
-4. **Konfigurasi Environment**
-   Salin file `.env.example` ke `.env` dan sesuaikan konfigurasi database Anda.
-   ```bash
-   cp .env.example .env
-   php artisan key:generate
-   ```
+Ikuti prosedur teknis di bawah ini untuk melakukan implementasi pada lingkungan lokal:
 
-5. **Migrasi Database**
-   ```bash
-   php artisan migrate --seed
-   ```
+1.  **Replikasi Repositori**
+    ```bash
+    git clone https://github.com/rahmat-assidik/Uang-Anak-Kos.git
+    cd Uang-Anak-Kos
+    ```
 
-6. **Jalankan Aplikasi**
-   ```bash
-   php artisan serve
-   ```
+2.  **Manajemen Dependensi PHP**
+    ```bash
+    composer install
+    ```
 
-## 📸 Tampilan Dashboard
+3.  **Instalasi Aset Frontend**
+    ```bash
+    npm install
+    npm run build
+    ```
 
-*Aplikasi ini menggunakan tema **Flat Modern** dengan kontras yang tinggi dan tipografi yang bersih untuk memastikan data keuangan Anda mudah dibaca.*
+4.  **Konfigurasi Lingkungan (.env)**
+    Salin file templat konfigurasi dan generate kunci enkripsi aplikasi:
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+    *Pastikan untuk menyesuaikan parameter database pada file `.env`.*
+
+5.  **Migrasi dan Seeding Database**
+    ```bash
+    php artisan migrate --seed
+    ```
+
+6.  **Eksekusi Server**
+    ```bash
+    php artisan serve
+    ```
+
+## 🎨 Standar Desain
+
+Proyek ini mengimplementasikan sistem desain yang konsisten untuk menjaga integritas visual:
+*   **Radius Komponen**: `4px` (Flat design standard).
+*   **Tipografi**: `Helvetica Neue`, `Inter`, `Sans-serif`.
+*   **Palet Warna**: Dominasi `Slate` dan `Gray` dengan aksen fungsional untuk status transaksi (Hijau untuk pemasukan, Merah untuk pengeluaran).
+
+## 📄 Lisensi
+
+Proyek ini didistribusikan di bawah Lisensi **MIT**. Untuk informasi lebih lanjut, silakan merujuk pada file `LICENSE`.
 
 ---
-
-Dibuat dengan ❤️ untuk kemudahan finansial anak kos.
+**Kontak Pengembang**: [Rahmat Assidik](https://github.com/rahmat-assidik)
